@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/abc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <TextView
+        android:id="@+id/txtID"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="2dp"
+        android:text="ID"
+        app:layout_constraintBottom_toBottomOf="@+id/ID"
+        app:layout_constraintEnd_toStartOf="@+id/ID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ID" />
+
+    <TextView
+        android:id="@+id/txtNAME"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="33dp"
+        android:text="Product"
+        app:layout_constraintBottom_toTopOf="@+id/QTY"
+        app:layout_constraintEnd_toStartOf="@+id/NAME"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtID" />
+
+    <TextView
+        android:id="@+id/txtQTY"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="78dp"
+        android:text="quintity"
+        app:layout_constraintBottom_toTopOf="@+id/d"
+        app:layout_constraintEnd_toStartOf="@+id/QTY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtNAME" />
+
+    <EditText
+        android:id="@+id/ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="27dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtID"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/NAME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="27dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtNAME"
+        app:layout_constraintTop_toBottomOf="@+id/ID" />
+
+    <EditText
+        android:id="@+id/QTY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="28dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtQTY"
+        app:layout_constraintTop_toBottomOf="@+id/NAME" />
+
+    <Button
+        android:id="@+id/f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:text="Find"
+        app:layout_constraintBaseline_toBaselineOf="@+id/a"
+        app:layout_constraintEnd_toStartOf="@+id/a"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="266dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="267dp"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/d"
+        app:layout_constraintStart_toEndOf="@+id/f"
+        app:layout_constraintTop_toTopOf="@+id/txtID" />
+
+    <Button
+        android:id="@+id/d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:text="Del"
+        app:layout_constraintBaseline_toBaselineOf="@+id/a"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/a" />
+</android.support.constraint.ConstraintLayout>
