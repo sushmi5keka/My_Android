@@ -53,6 +53,15 @@ public class MyDbAdapter {
         return id;
     }
 
+    public long updateData(Product product) {
+        SQLiteDatabase db = helper.getWritableDatabase();
+        ContentValues cv = new ContentValues();
+        cv.put(MyDbHelper.PRODUCT_NAME, product.getProductName());
+        cv.put(MyDbHelper.QTY, product.getQuantity());
+        long id = db.update(MyDbHelper.TABLE_NAME,cv,MyDbHelper.ID+"="+String.valueOf(product.getId()),null);
+        return id;
+    }
+
     public Product findProductByID(int id) {
         SQLiteDatabase db = helper.getReadableDatabase();
         String[] projection = {MyDbHelper.ID, MyDbHelper.PRODUCT_NAME, MyDbHelper.QTY};
