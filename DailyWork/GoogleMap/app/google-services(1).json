@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "179813477105",
+    "firebase_url": "https://mapex-2f23f.firebaseio.com",
+    "project_id": "mapex-2f23f",
+    "storage_bucket": "mapex-2f23f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179813477105:android:4db0d9a43518a093",
+        "android_client_info": {
+          "package_name": "com.example.googlemap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "179813477105-v0i9j6ojpb0grilnr4l64jl7jp20ldla.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASMQQpYO-hbj2eqyAkXgvixoAQVMe51OM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "179813477105-v0i9j6ojpb0grilnr4l64jl7jp20ldla.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
