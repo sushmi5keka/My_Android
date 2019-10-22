@@ -100,30 +100,52 @@
         android:layout_gravity="center">
 
         <Button
-            android:text="Add"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/button3"
-            android:layout_weight="1"
             style="@style/Widget.AppCompat.Button.Borderless"
-            android:onClick="saveProduct" />
-
-        <Button
-            android:text="Find"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="saveProduct"
+            android:text="Add"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+        <Button
             android:id="@+id/button2"
-            android:layout_weight="1"
             style="@style/Widget.AppCompat.Button.Borderless"
-            android:onClick="getProductByProductId" />
-
-        <Button
-            android:text="Delete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button"
             android:layout_weight="1"
+            android:onClick="getProductByProductId"
+            android:text="Find"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+        <Button
+            android:id="@+id/button"
             style="@style/Widget.AppCompat.Button.Borderless"
-            android:onClick="deleteProductByProductID" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="deleteProductByProductID"
+            android:text="Delete"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+        <Button
+            android:id="@+id/up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="update"
+            android:onClick="updateProduct"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <ListView
+            android:id="@+id/listviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
     </LinearLayout>
 </LinearLayout>

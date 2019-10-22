@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Firebase Cloud Messaging</string>
+    <string name="quickstart_message">Click the SUBSCRIBE TO WEATHER button below to subscribe to the weather topic.</string>
+    <string name="subscribe_to_weather">subscribe to weather</string>
+    <string name="log_token">Log Token</string>
+    
+    <string name="msg_subscribed">Subscribe to weather topic</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+    <string name="default_notification_channel_id" translatable="false">fcn_default_channel</string>
+    <string name="default_notification_channel_name" translatable="true">weather</string>
+    <string name="msg_subscribe_failed">Failed to subscribe to weather topic</string>
+    <string name="from_"></string>
+</resources>
